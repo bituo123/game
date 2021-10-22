@@ -58,34 +58,6 @@
 			}
 		</style>
 	</head>
-	<body>
-		<div id="game">
-			<div id="character"></div>
-			<div id="block"></div>
-			<a id ="newgame" href="game2.html">点我换游戏</a>
-			<a id ="regame" href="index.html">点我重新玩</a>
-		</div>
-		
-	</body>
-	<script type="text/javascript">
-		var character = document.getElementById("character");
-		var block = document.getElementById("block");
-		function jump(){
-			if(character.classList != "animate"){
-				character.classList.add("animate");
-			}
-			
-			setTimeout(function(){
-				character.classList.remove("animate");},500);
-		}
-		var checkDead = setInterval(function(){
-			var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
-			var blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
-			if(blockLeft<20 && blockLeft>0 && characterTop>=130){
-				block.style.animation = "none";
-				block.style.display="none";
-				alert("you fucking lose!!!");
-			}
-			},10);
-	</script>
+<body style=" background: url(QQ图片20211022235803.jpg) no-repeat center center fixed; background-size: 100%;">
+</body>
 </html>
